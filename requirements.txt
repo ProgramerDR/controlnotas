@@ -4,3 +4,4 @@ mysql-connector-python
 pandas
 plotly
 numpy
+dash
