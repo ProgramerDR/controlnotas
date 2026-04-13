@@ -15,7 +15,7 @@ app = Flask(__name__)
 app.secret_key = "40414732"
 
 # crear dashboard
-creartablero(app)
+# creartablero(app)
 
 #evitar cache  en paginas protegidas
 @app.after_request
