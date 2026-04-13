@@ -4,10 +4,11 @@ import pandas as pd
 
 def conectar():
     return mysql.connector.connect(
-        host=os.environ.get("DB_HOST"),
-        user=os.environ.get("DB_USER"),
-        password=os.environ.get("DB_PASSWORD"),
-        database=os.environ.get("DB_NAME")
+        host=os.getenv("MYSQLHOST"),
+        port=int(os.getenv("MYSQLPORT")),
+        user=os.getenv("MYSQLUSER"),
+        password=os.getenv("MYSQLPASSWORD"),
+        database=os.getenv("MYSQLDATABASE")
     )
 
 # obtener usuarios
