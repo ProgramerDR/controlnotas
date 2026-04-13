@@ -48,7 +48,7 @@ def insertar_estudiante(nombre, edad, carrera, nota1, nota2, nota3, promedio, de
     cursor = conn.cursor()
 
     query = """INSERT INTO estudiantes 
-    (Nombre,Edad,Carrera,nota1,nota2,nota3,Promedio,Desempeño)
+    (Nombre,Edad,Carrera,nota1,nota2,nota3,Promedio,Desempeno)
     VALUES (%s,%s,%s,%s,%s,%s,%s,%s)"""
 
     cursor.execute(query, (nombre, edad, carrera, nota1, nota2, nota3, promedio, desempeno))
